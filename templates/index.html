@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Octo Doodle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        body {
+            height: inherit;
+            background-image: url({{ url_for('static', path='octopus.png') }});
+            background-color: rgba(255, 148, 112, 1);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-attachment: fixed;
+        }
+        .container-fluid {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh; padding-top: 50vh;">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center text-dark">
+                <h1 class="display-1">Musical Octo Doodle</h1>
+                <p class="">
+                    Curabitur sapien magna, viverra quis nibh at, porttitor mattis arcu. Mauris auctor rhoncus vestibulum. 
+                    Sed ultricies purus lorem, id hendrerit ex tempus mattis. Mauris eleifend rhoncus posuere. Nulla sem 
+                    felis, tincidunt ut interdum ac, consequat eget velit. Ut et neque ac velit pulvinar hendrerit eget at 
+                    orci. Nam tellus ante, facilisis quis est a, gravida aliquet nibh. Etiam ac lectus mauris. Integer 
+                    vitae nibh vitae nisi ornare vestibulum. Suspendisse ut neque at diam lobortis varius sit amet a felis.    
+                </p>
+            </div>
+        </div>
+        <div class="row" style="height: 20vh;""></div>
+        <div class="row" style="background-color: rgba(250, 235, 215, 0.7);">
+            <div class="col-2 col-md-0"></div>
+            <div class="col-8">
+                <div class="card-group my-5">
+                    <div class="card bg-transparent border-0">
+                        <img src="{{ url_for('static', path='keyboard.png') }}" class="card-img-top mx-auto" style="max-width: 250px;" alt="Keyboard">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Keyboard</h5>
+                          <p class="card-text">Nullam vehicula sollicitudin lorem, sed euismod nulla commodo sit amet. Phasellus elementum auctor nibh, at pretium ligula sodales.</p>
+                          <p class="card-text"><small class="text-body-secondary">Last updated 3 days ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0">
+                        <img src="{{ url_for('static', path='guitar.png') }}" class="card-img-top mx-auto" style="max-width: 250px;" alt="Keyboard">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Guitar</h5>
+                          <p class="card-text">Cras tristique odio nulla, in laoreet magna vehicula et. Donec et leo a rhoncus enim aliquam eu ex vehicula tempus ac quis libero.</p>
+                          <p class="card-text"><small class="text-body-secondary">Last updated 3 days ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-0">
+                        <img src="{{ url_for('static', path='voice.png') }}" class="card-img-top mx-auto" style="max-width: 250px;" alt="Keyboard">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Voice</h5>
+                          <p class="card-text">Curabitur laoreet metus quis ligula pretium, ut luctus nisi. Integer mollis pretium felis nec blandit. Sed dignissim egestas lorem.</p>
+                          <p class="card-text"><small class="text-body-secondary">Last updated 3 days ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="height: 30vh;""></div>
+    </div>
+</body>
+</html>
